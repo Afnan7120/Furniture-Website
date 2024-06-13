@@ -1,0 +1,87 @@
+/* styles.css */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-image: url(img1.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    position: relative;
+
+
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.form {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    
+}
+
+/* label {
+    display: block;
+    margin-bottom: 5px;
+} */
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: #d1f8bd;
+}
+
+button {
+    width: 50%;
+    padding: 10px;
+    background-color: #28a746cb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    
+}
+
+button:hover {
+    background-color: #218838;
+}
+.btnBtnLogSign{
+    display: flex;
+}
+
+.error {
+    color: rgb(118, 35, 35);
+    font-size: 0.9em;
+    display: none;
+}
+
+a
+{
+    color: white;
+    text-decoration-line: none;
+}

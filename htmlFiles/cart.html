@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/cssFiles/cart.css" />
+  </head>
+  <body>
+    <div id="cart-page">
+      <h1>Cart</h1>
+      <ul id="cart-items">
+      </ul>
+
+      <p id="total-price">Total: </p>
+
+      <button id="checkout-btn">Checkout</button>
+    </div>
+
+    <script>
+      const itemData = JSON.parse(
+        new URLSearchParams(window.location.search).get("ItemData")
+      );
+
+      // Define the cart items
+      let cartItems = [];
+
+      // Add the item to the cart
+      function addToCart(item) {
+        const itemIndex = cartItems.findIndex((i) => i._id === item._id);
+        if (itemIndex === -1) {
+          cartItems.push(item);
+        } else {
+          cartItems[itemIndex].quantity++;
+        }
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+      }
+
+      // Get the cart items and total price elements
+      const cartItemsElement = document.getElementById("cart-items");
+      const totalPriceElement = document.getElementById("total-price");
+
+      // Function to add an item to the cart
+      function addItemToCart(item) {
+        // Create a new li element for the item
+        const itemLi = document.createElement("li");
+        itemLi.innerHTML = `
+          <img src="${item.img}" alt="Item Image" />
+          <p>${item.description}</p>
+          <p>Price: ${item.price}</p>
+          <button class="remove-btn" data-item-id="${item._id}">Remove</button>
+          <button class="add-more-btn" data-item-id="${item._id}">Add More</button>
+        `;
+
+        // Add the item to the cart items
+        cartItemsElement.appendChild(itemLi);
+
+        // Update the total price
+        const total = calculateTotalPrice(cartItems);
+        totalPriceElement.textContent = `Total: $${total.toFixed(2)}`;
+      }
+
+      // Function to remove an item from the cart
+      function removeFromCart(item) {
+        const itemIndex = cartItems.findIndex((i) => i._id === item._id);
+        if (itemIndex !== -1) {
+          cartItems.splice(itemIndex, 1);
+          localStorage.setItem("cartItems", JSON.stringify(cartItems));
+        }
+      }
+
+      // Function to update the total price
+      function updateTotalPrice() {
+        let totalPrice = 0;
+        cartItems.forEach((item) => {
+          totalPrice += item.price * item.quantity;
+        });
+        totalPriceElement.innerText = `Total: $${totalPrice.toFixed(2)}`;
+      }
+
+      // Add the item to the cart
+      addToCart(itemData);
+
+      // Render the cart items
+      document.getElementById("cart-items").innerHTML = "";
+      if (cartItems.length > 0) {
+        cartItems.forEach((item) => {
+          const itemHTML = `
+            <li>
+              <img src="${item.image}" alt="Item Image">
+              <p>${item.description}</p>
+              <p>Price: ${item.price}</p>
+              <button class="remove-btn" data-item-id="${item._id}">Remove</button>
+              <button class="add-more-btn" data-item-id="${item._id}">Add More</button>
+            </li>
+          `;
+          document.getElementById("cart-items").innerHTML += itemHTML;
+        });
+        updateTotalPrice();
+      }
+
+      // Add event listeners for removing and adding more items
+      document.querySelectorAll(".remove-btn").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          const itemId = btn.dataset.itemId;
+          removeFromCart(cartItems.find((i) => i._id === itemId));
+          updateTotalPrice();
+        });
+      });
+
+      document.querySelectorAll(".add-more-btn").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          const itemId = btn.dataset.itemId;
+          const item = cartItems.find((i) => i._id === itemId);
+          if (item) {
+            item.quantity++;
+            localStorage.setItem("cartItems", JSON.stringify(cartItems));
+            updateTotalPrice();
+          }
+        });
+      });
+
+      // Update the total price when the cart changes
+      updateTotalPrice();
+    </script>
+  </body>
+</html>

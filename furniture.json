@@ -1,0 +1,261 @@
+[
+    {
+        "id": 1,
+        "title": "Modern Sofa",
+        "productName": "Sofa",
+        "price": 899.99,
+        "description": "A sleek and modern sofa with comfortable cushions and a sturdy frame.",
+        "category": "Living Room",
+        "img": "https://i.pinimg.com/564x/85/4d/24/854d2487771731af5b5c3ece4dbd67b9.jpg",
+        "rating": {
+            "rate": 4.5,
+            "count": 12
+        }
+    },
+    {
+        "id": 2,
+        "title": "Industrial Coffee Table",
+        "productName": "Coffee Table",
+        "price": 199.99,
+        "description": "A rustic and industrial coffee table made from reclaimed wood and metal.",
+        "category": "Living Room",
+        "img": "https://i.pinimg.com/736x/5c/96/f6/5c96f60cda7c50f99ebd694b43c1bd24.jpg",
+        "rating": {
+            "rate": 4.2,
+            "count": 8
+        }
+    },
+    {
+        "id": 3,
+        "title": "Luxury Bed Frame",
+        "productName": "Bed Frame",
+        "price": 499.99,
+        "description": "A high-quality bed frame with a sturdy design and luxurious fabric.",
+        "category": "Bedroom",
+        "img": "https://i.pinimg.com/736x/9c/6a/a3/9c6aa38586eb7088fb5e6473cc9d55e2.jpg",
+        "rating": {
+            "rate": 4.8,
+            "count": 15
+        }
+    },
+    {
+        "id": 4,
+        "title": "Modern Armchair",
+        "productName": "Armchair",
+        "price": 399.99,
+        "description": "A stylish and comfortable armchair with a modern design and plush cushions.",
+        "category": "Living Room",
+        "img": "https://i.pinimg.com/564x/3b/04/22/3b0422326734fb50be166f514d6c55a8.jpg",
+        "rating": {
+            "rate": 4.7,
+            "count": 11
+        }
+    },
+    {
+        "id": 5,
+        "title": "Rustic Wooden Bench",
+        "productName": "Bench",
+        "price": 149.99,
+        "description": "A rustic and sturdy wooden bench with a natural finish.",
+        "category": "Living Room",
+        "img": "https://i.pinimg.com/564x/80/18/ce/8018ce917d3bf48562d9cef47f16be15.jpg",
+        "rating": {
+            "rate": 4.4,
+            "count": 7
+        }
+    },
+    {
+        "id": 6,
+        "title": "Glass Coffee Table",
+        "productName": "Coffee Table",
+        "price": 249.99,
+        "description": "A sleek and modern glass coffee table with a minimalist design.",
+        "category": "Living Room",
+        "img": "https://i.pinimg.com/564x/a1/25/49/a12549ec3661b9095c71b4ecf5934f6d.jpg",
+        "rating": {
+            "rate": 4.9,
+            "count": 16
+        }
+    },
+    {
+        "id": 7,
+        "title": "Leather Ottoman",
+        "productName": "Ottoman",
+        "price": 299.99,
+        "description": "A stylish and comfortable leather ottoman with a modern design.",
+        "category": "Living Room",
+        "img": "https://i.pinimg.com/564x/28/39/42/2839428e0b59864b58d11e2ee02d6fa0.jpg",
+        "rating": {
+            "rate": 4.6, 
+            "count": 9}
+    },
+
+    {
+        "id": 8,
+        "title": "Wicker Patio Set",
+        "productName": "Patio Set",
+        "price": 499.99,
+        "description": "A stylish and functional wicker patio set with a rustic design.",
+        "category": "Outdoor",
+        "img": "https://i.pinimg.com/736x/84/9e/ff/849eff7c5d1110b9538faa0b8bc409f6.jpg",
+        "rating": {
+            "rate": 4.3, 
+            "count": 6}
+    },
+
+    {
+        "id": 9,
+        "title": "Minimalist TV Stand",
+        "productName": "TV Stand",
+        "price": 199.99,
+        "description": "A sleek and minimalist TV stand with a modern design.",
+        "category": "Home Office",
+        "img": "https://i.pinimg.com/564x/92/81/0b/92810be213f626432d1f0c47fedf3299.jpg",
+        "rating": {
+            "rate": 4.5, 
+            "count": 10}
+    },
+
+    {
+        "id": 10,
+        "title": "Sleek Bookshelf",
+        "productName": "Bookshelf",
+        "price": 249.99,
+        "description": "A stylish and modern bookshelf with a minimalist design",
+        "category": "Home Office",
+        "img": "https://i.pinimg.com/736x/17/89/17/178917be69b3a85f467b470085f91698.jpg",
+        "rating": {
+            "rate": 4.7, 
+            "count": 12 }
+    },
+    {
+        "id": 11,
+        "title": "Industrial Desk Lamp",
+        "productName": "Desk Lamp",
+        "price": 39.99,
+        "description": "A stylish and functional industrial desk lamp with a rustic design",
+        "category": "Home Office",
+        "img": "https://i.pinimg.com/564x/a4/21/8d/a4218d35aa1cdfff6c6fa746f2cff349.jpg",
+        "rating": {
+            "rate": 4.5, 
+            "count": 8}
+    },
+    
+    {
+        "id": 12,
+        "title": "Luxury Area Rug",
+        "productName": "Area Rug",
+        "price": 299.99,
+        "description": "A high-quality area rug with a luxurious design and soft texture",
+        "category": "Living Room",
+        "img": "https://i.pinimg.com/564x/d9/41/a4/d941a4cf0d31ff13f8b08f9a2a8ada78.jpg",
+        "rating": {
+            "rate": 4.9, 
+            "count": 15}
+    },
+  
+    {
+        "id": 13,
+        "title": "Mid-Century Side Table",
+        "productName": "Side Table",
+        "price": 199.99,
+        "description": "A stylish and functional mid-century side table with a retro design",
+        "category": "Living Room",
+        "img": "https://i.pinimg.com/564x/84/54/5f/84545fc291279bb84d944e9dc5ecfc76.jpg",
+        "rating": {
+            "rate": 4.6, 
+            "count": 10}
+    },
+    
+    {
+        "id": 14,
+        "title": "Rustic Wooden Dresser",
+        "productName": "Dresser",
+        "price": 499.99,
+        "description": "A rustic and sturdy wooden dresser with a natural finish",
+        "category": "Bedroom",
+        "img": "https://i.pinimg.com/564x/1e/1a/56/1e1a56950cdd4b93dd8cb76b08c9a83d.jpg",
+        "rating": {
+            "rate": 4.7, 
+            "count": 11}
+    },
+  
+    {
+        "id": 15,
+        "title": "Glass Vase",
+        "productName": "Vase",
+        "price": 49.99,
+        "description": "A stylish and elegant glass vase with a minimalist design",
+        "category": "Decorative Items",
+        "img": "https://i.pinimg.com/564x/a4/7d/57/a47d575951cade0d55052c6606b9a5af.jpg",
+        "rating": {
+            "rate": 4.5, 
+            "count": 9}
+    },
+
+    {
+        "id": 16,
+        "title": "Modern Desk Chair",
+        "productName": "Desk Chair",
+        "price": 299.99,
+        "description": "A stylish and comfortable modern desk chair with a sleek design",
+        "category": "Home Office",
+        "img": "https://i.pinimg.com/564x/ec/07/ef/ec07ef5b79863696a7e491214129ee84.jpg",
+        "rating": {
+            "rate": 4.8, 
+            "count": 14}
+    },
+  
+    {
+        "id": 17,
+        "title": "Woven Basket",
+        "productName": "Basket",
+        "price": 49.99,
+        "description": "A stylish and functional woven basket with a natural finish",
+        "category": "Storage",
+        "img": "https://i.pinimg.com/564x/a8/5b/c9/a85bc975fee56fbe8f82d67c8db03ede.jpg",
+        "rating": {
+            "rate": 4.5, 
+            "count": 8}
+    },
+    
+    {
+        "id": 18,
+        "title": "Industrial Shelving Unit",
+        "productName": "Shelving Unit",
+        "price": 299.99,
+        "description": "A stylish and functional industrial shelving unit with a rustic design",
+        "category": "Home Office",
+        "img": "https://i.pinimg.com/564x/53/50/31/535031c5845ad1ae0eea6963a88e3390.jpg",
+        "rating": {
+            "rate": 4.6, 
+            "count": 10}
+    },
+  
+    {
+        "id": 19,
+        "title": "Leather Recliner",
+        "productName": "Recliner",
+        "price": 499.99,
+        "description": "A stylish and comfortable leather recliner with a classic design",
+        "category": "Living Room",
+        "img": "https://i.pinimg.com/736x/51/42/49/514249b38a41bfd4d890b6ff5f59c62e.jpg",
+        "rating": {
+            "rate": 4.7, 
+            "count": 12}
+    },
+    
+    {
+        "id": 20,
+        "title": "Mid-Century Desk",
+        "productName": "Desk",
+        "price": 299.99,
+        "description": "A stylish and functional mid-century desk with a retro design",
+        "category": "Home Office",
+        "img": "https://i.pinimg.com/736x/cd/aa/30/cdaa308fc4a08fbee448e5be00ae2df9.jpg",
+        "rating": {
+            "rate": 4.6, 
+            "count": 10}
+    }
+      
+]

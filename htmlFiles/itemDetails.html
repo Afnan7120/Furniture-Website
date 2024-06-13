@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furniture Product Details</title>
+    <link rel="stylesheet" href="/cssFiles/itemDetails.css" />
+  </head>
+  <body>
+      <header class="header">
+        <nav class="nav">
+          <ul>
+            <li><a href="index.html"> Contiue Shopping</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="product-image">
+          <img src="" alt="Product Image" id = "product-image">
+        </div>
+        <div class="product-details">
+          <h1 class="product-name" id="product-name"></h1>
+          <p class="product-description" id="product-description"></p>
+          <p class="product-price" id="product-price"></p>
+          <button class="buy-now">Buy Now</button>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </main>
+      <footer class="footer">
+        <p>&copy; AMAHome Furniture Store</p>
+      </footer> 
+
+    <script>
+      
+      const urlParams = new URLSearchParams(window.location.search);
+      const ItemData = JSON.parse(urlParams.get("ItemData"));
+      if (ItemData) {
+        console.log(ItemData); // Print the ItemData object to the console
+        
+      } else {
+        console.log("ItemData is null");
+      }
+      // access the ItemData object properties
+      
+      const productImage = document.getElementById("product-image")
+      productImage.src =  ItemData.img
+
+      const productName  = document.getElementById("product-name")
+      productName.innerHTML = ItemData.productName;
+
+      const productDescription  = document.getElementById("product-description")
+      productDescription.innerHTML = ItemData.description;
+
+      const productPrice  = document.getElementById("product-price")
+      productPrice.innerHTML = ItemData.price + " $ ";
+    
+    </script>
+  </body>
+</html>
